@@ -1,0 +1,14 @@
+{
+  "name": "testing-i",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:RaineBeauDubs/testing-i.git",
+  "author": "Raine Wallace <rainebeaudubs@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "devDependencies": {
+    "jest": "^24.4.0"
+  }
+}
