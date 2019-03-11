@@ -6,7 +6,15 @@ module.exports = {
 };
 
 function succeed(item) {
-  return { ...item };
+  let enhancer = item.enhancement;
+  const enhanced = () => {
+    if (enhancer < 20) {
+      enhancer = enhancer + 1
+      console.log(enhancer);
+      return enhancer;
+    }
+  }
+  return { ...item, enhancement: enhanced()};
 }
 
 function fail(item) {
